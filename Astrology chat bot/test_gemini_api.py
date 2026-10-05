@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-api_key = os.getenv("AIzaSyA1IWudNAkJ8cVb50eYzLqWkHegBNz3WiI")
+api_key = os.getenv("GEMINI_API_KEY")
 
-print("Testing Gemini Key:", api_key)
+print("Gemini key loaded:", bool(api_key))
 
 url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 headers = {
